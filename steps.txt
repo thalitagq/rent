@@ -1,0 +1,12 @@
+PASSOS PARA CRIAR NOVO MODULO (.../modules/novo_modulo)
+
+1º - Criar pasta do módulo e dentro dela a pasta "entities"
+2º - Criar dentro da pasta entities o arquivo da classe, ex. (User.ts)
+3º - Criar pasta repositories dentro da pasta do novo módulo
+4º - Criar as interfaces
+5º - Criar a pasta implementations na pasta "repositories" do novo módulo
+6º - Criar a pasta de UseCases e dentro o controller e o useCase
+7º - Criar um singleton no arquivo shared/container/index com a classe do repository (ex. UserRepository)
+8º - Utilizar o singleton criado no passo anterior e por no @inject do useCase
+9º - Criar o conteúdo do respectivo Controller
+10º - Criar o respectivo arquivo na pasta routes
