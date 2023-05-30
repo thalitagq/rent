@@ -19,7 +19,7 @@ class UsersRepository implements IUsersRepository {
     await this.repository.save(user)
   }
 
-  findById(id: string): Promise<User> {
+  async findById(id: string): Promise<User> {
     const user = this.repository.findOne(id)
     return user
   }

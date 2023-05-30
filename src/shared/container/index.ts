@@ -48,3 +48,4 @@ container.registerSingleton<IUsersTokensRepository>(
   "UsersTokensRepository",
   UsersTokensRepository
 );
+
