@@ -13,7 +13,7 @@ import swaggerFile from "../../../swagger.json";
 import { router } from "./routes";
 import upload from "@config/upload";
 
-createConnection("localhost");
+createConnection();
 const app = express();
 
 app.use(express.json());
