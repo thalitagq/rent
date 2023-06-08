@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.S3StorageProvider = void 0;
 var _awsSdk = require("aws-sdk");
 var _path = require("path");
-var _upload = _interopRequireDefault(require("@config/upload"));
+var _upload = _interopRequireDefault(require("../../../../../config/upload"));
 var _fs = _interopRequireDefault(require("fs"));
 var _mime = _interopRequireDefault(require("mime"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

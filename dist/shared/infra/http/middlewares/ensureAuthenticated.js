@@ -5,8 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ensureAuthenticated = ensureAuthenticated;
 var _jsonwebtoken = require("jsonwebtoken");
-var _AppError = require("@shared/errors/AppError");
-var _auth = _interopRequireDefault(require("@config/auth"));
+var _AppError = require("../../../errors/AppError");
+var _auth = _interopRequireDefault(require("../../../../config/auth"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 async function ensureAuthenticated(request, response, next) {
   const authHeader = request.headers.authorization;

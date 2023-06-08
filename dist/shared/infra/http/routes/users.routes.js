@@ -6,11 +6,11 @@ Object.defineProperty(exports, "__esModule", {
 exports.usersRoutes = void 0;
 var _express = require("express");
 var _multer = _interopRequireDefault(require("multer"));
-var _upload = _interopRequireDefault(require("@config/upload"));
-var _CreateuserController = require("@modules/accounts/useCases/createuser/CreateuserController");
-var _UpdateUserAvatarController = require("@modules/accounts/useCases/updateUserAvatar/UpdateUserAvatarController");
+var _upload = _interopRequireDefault(require("../../../../config/upload"));
+var _CreateuserController = require("../../../../modules/accounts/useCases/createuser/CreateuserController");
+var _UpdateUserAvatarController = require("../../../../modules/accounts/useCases/updateUserAvatar/UpdateUserAvatarController");
 var _ensureAuthenticated = require("../middlewares/ensureAuthenticated");
-var _ProfileUserController = require("@modules/accounts/useCases/profileUser/ProfileUserController");
+var _ProfileUserController = require("../../../../modules/accounts/useCases/profileUser/ProfileUserController");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const usersRoutes = (0, _express.Router)();
 exports.usersRoutes = usersRoutes;

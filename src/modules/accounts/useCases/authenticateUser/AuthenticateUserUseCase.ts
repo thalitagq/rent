@@ -3,10 +3,9 @@ import { compare } from "bcrypt"
 import { sign } from "jsonwebtoken"
 
 import { AppError } from "@shared/errors/AppError";
-import { IUsersRepository } from "modules/accounts/repositories/IUsersRepository";
+import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository";
 import { IUsersTokensRepository } from "@modules/accounts/repositories/IUsersTokensRepository";
 import auth from "@config/auth";
-import { DayjsDateProvider } from "@shared/container/providers/DateProvider/implementations/DayjsDateProvider";
 import { IDateProvider } from "@shared/container/providers/DateProvider/IDateProvider";
 
 interface IRequest{

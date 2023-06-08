@@ -5,10 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.rentalRoutes = void 0;
 var _express = require("express");
-var _CreateRentalController = require("@modules/rentals/useCases/createRental/CreateRentalController");
+var _CreateRentalController = require("../../../../modules/rentals/useCases/createRental/CreateRentalController");
 var _ensureAuthenticated = require("../middlewares/ensureAuthenticated");
-var _DevolutionRentalController = require("@modules/rentals/useCases/devolutionRental/DevolutionRentalController");
-var _ListRentalsByUserController = require("@modules/rentals/useCases/listRentalsByUser/ListRentalsByUserController");
+var _DevolutionRentalController = require("../../../../modules/rentals/useCases/devolutionRental/DevolutionRentalController");
+var _ListRentalsByUserController = require("../../../../modules/rentals/useCases/listRentalsByUser/ListRentalsByUserController");
 const rentalRoutes = (0, _express.Router)();
 exports.rentalRoutes = rentalRoutes;
 const createRentalController = new _CreateRentalController.CreateRentalController();

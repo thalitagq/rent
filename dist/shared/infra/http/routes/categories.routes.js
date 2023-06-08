@@ -6,9 +6,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.categoriesRoutes = void 0;
 var _express = require("express");
 var _multer = _interopRequireDefault(require("multer"));
-var _CreateCategoryController = require("@modules/cars/useCases/createCategory/CreateCategoryController");
-var _ImportCategoryController = require("@modules/cars/useCases/importCategory/ImportCategoryController");
-var _ListCategoriesController = require("@modules/cars/useCases/listCategories/ListCategoriesController");
+var _CreateCategoryController = require("../../../../modules/cars/useCases/createCategory/CreateCategoryController");
+var _ImportCategoryController = require("../../../../modules/cars/useCases/importCategory/ImportCategoryController");
+var _ListCategoriesController = require("../../../../modules/cars/useCases/listCategories/ListCategoriesController");
 var _ensureAdmin = require("../middlewares/ensureAdmin");
 var _ensureAuthenticated = require("../middlewares/ensureAuthenticated");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

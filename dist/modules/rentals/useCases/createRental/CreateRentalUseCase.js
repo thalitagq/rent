@@ -7,10 +7,10 @@ exports.CreateRentalUseCase = void 0;
 var _dayjs = _interopRequireDefault(require("dayjs"));
 var _utc = _interopRequireDefault(require("dayjs/plugin/utc"));
 var _tsyringe = require("tsyringe");
-var _IRentalsRepository = require("@modules/rentals/repositories/IRentalsRepository");
-var _IDateProvider = require("@shared/container/providers/DateProvider/IDateProvider");
-var _AppError = require("@shared/errors/AppError");
-var _ICarsRepository = require("@modules/cars/repositories/ICarsRepository");
+var _IRentalsRepository = require("../../repositories/IRentalsRepository");
+var _IDateProvider = require("../../../../shared/container/providers/DateProvider/IDateProvider");
+var _AppError = require("../../../../shared/errors/AppError");
+var _ICarsRepository = require("../../../cars/repositories/ICarsRepository");
 var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 _dayjs.default.extend(_utc.default);

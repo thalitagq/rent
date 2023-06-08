@@ -1,11 +1,11 @@
 "use strict";
 
 var _dayjs = _interopRequireDefault(require("dayjs"));
-var _RentalsRepositoryInMemory = require("@modules/rentals/repositories/in-memory/RentalsRepositoryInMemory");
-var _DayjsDateProvider = require("@shared/container/providers/DateProvider/implementations/DayjsDateProvider");
-var _AppError = require("@shared/errors/AppError");
+var _RentalsRepositoryInMemory = require("../../repositories/in-memory/RentalsRepositoryInMemory");
+var _DayjsDateProvider = require("../../../../shared/container/providers/DateProvider/implementations/DayjsDateProvider");
+var _AppError = require("../../../../shared/errors/AppError");
 var _CreateRentalUseCase = require("./CreateRentalUseCase");
-var _CarsRepositoryInMemory = require("@modules/cars/repositories/in-memory/CarsRepositoryInMemory");
+var _CarsRepositoryInMemory = require("../../../cars/repositories/in-memory/CarsRepositoryInMemory");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 let createRentalUseCase;
 let rentalsRepositoryInMemory;

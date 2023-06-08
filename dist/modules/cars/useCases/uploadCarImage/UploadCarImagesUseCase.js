@@ -5,8 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.UploadCarImagesUseCase = void 0;
 var _tsyringe = require("tsyringe");
-var _ICarsImagesRepository = require("@modules/cars/repositories/ICarsImagesRepository");
-var _IStorageProvider = require("@shared/container/providers/StorageProvider/IStorageProvider");
+var _ICarsImagesRepository = require("../../repositories/ICarsImagesRepository");
+var _IStorageProvider = require("../../../../shared/container/providers/StorageProvider/IStorageProvider");
 var _dec, _dec2, _dec3, _dec4, _dec5, _class;
 let UploadCarImagesUseCase = (_dec = (0, _tsyringe.injectable)(), _dec2 = function (target, key) {
   return (0, _tsyringe.inject)("CarsImagesRepository")(target, undefined, 0);

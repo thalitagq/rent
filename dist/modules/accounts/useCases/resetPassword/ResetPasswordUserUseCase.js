@@ -4,10 +4,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.ResetPasswordUserUseCase = void 0;
-var _IUsersRepository = require("@modules/accounts/repositories/IUsersRepository");
-var _IUsersTokensRepository = require("@modules/accounts/repositories/IUsersTokensRepository");
-var _IDateProvider = require("@shared/container/providers/DateProvider/IDateProvider");
-var _AppError = require("@shared/errors/AppError");
+var _IUsersRepository = require("../../repositories/IUsersRepository");
+var _IUsersTokensRepository = require("../../repositories/IUsersTokensRepository");
+var _IDateProvider = require("../../../../shared/container/providers/DateProvider/IDateProvider");
+var _AppError = require("../../../../shared/errors/AppError");
 var _tsyringe = require("tsyringe");
 var _bcrypt = require("bcrypt");
 var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class;

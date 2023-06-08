@@ -9,16 +9,16 @@ require("dotenv/config");
 var _express = _interopRequireDefault(require("express"));
 require("express-async-errors");
 var _swaggerUiExpress = _interopRequireDefault(require("swagger-ui-express"));
-require("@shared/container");
-var _AppError = require("@shared/errors/AppError");
-var _index = _interopRequireDefault(require("@shared/infra/typeorm/index"));
+require("../../container");
+var _AppError = require("../../errors/AppError");
+var _typeorm = _interopRequireDefault(require("../typeorm"));
 var _swagger = _interopRequireDefault(require("../../../swagger.json"));
 var _routes = require("./routes");
-var _upload = _interopRequireDefault(require("@config/upload"));
+var _upload = _interopRequireDefault(require("../../../config/upload"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 /* eslint-disable import/order */
 
-(0, _index.default)("localhost");
+(0, _typeorm.default)();
 const app = (0, _express.default)();
 exports.app = app;
 app.use(_express.default.json());

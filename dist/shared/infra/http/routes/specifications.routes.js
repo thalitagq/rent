@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.specificationsRoutes = void 0;
 var _express = require("express");
-var _createSpecificationController = require("@modules/cars/useCases/createSpecification/createSpecificationController");
+var _createSpecificationController = require("../../../../modules/cars/useCases/createSpecification/createSpecificationController");
 var _ensureAdmin = require("../middlewares/ensureAdmin");
 var _ensureAuthenticated = require("../middlewares/ensureAuthenticated");
 const specificationsRoutes = (0, _express.Router)();
