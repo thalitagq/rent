@@ -12,6 +12,7 @@ import createConnection from "@shared/infra/typeorm/index";
 import swaggerFile from "../../../swagger.json";
 import { router } from "./routes";
 import upload from "@config/upload";
+import cors from "cors";
 
 createConnection();
 const app = express();
@@ -22,6 +23,8 @@ app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerFile));
 
 app.use("/avatar", express.static(`${upload.tmpFolder}/avatar`))
 app.use("/cars", express.static(`${upload.tmpFolder}/cars`));
+
+app.use(cors())
 
 app.use(router);
 
